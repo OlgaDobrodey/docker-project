@@ -1,0 +1,29 @@
+version: '3.5'
+
+services:
+  postgres:
+    image: postgres:13.1
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=employees_database
+      - APP_DB_NAME=employees_database
+      - PGDATA=/var/lib/postgresql/data/pgdatad
+    volumes:
+      - .:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+  docker-project:
+    image: docker-project
+    build:
+      context: .
+    container_name: docker-project
+    restart: on-failure
+    ports:
+      - 8085:8080
+    depends_on:
+      - postgres
+
+
+

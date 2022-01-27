@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "6541b878-9e0d-42b2-b2ac-0dbd6be47860",
+		"name": "Docker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get employee by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8085/employees/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8085/employees/",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"employees",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"James\",\r\n    \"surname\": \"Bond\",\r\n    \"department\": \"JAVA\",\r\n    \"salary\": 800\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8085/employees/",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"employees",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
