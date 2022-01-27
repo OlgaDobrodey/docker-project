@@ -13,8 +13,8 @@ Before all:
 ```
 docker build -t <create image name> . - build image
 docker images  -   view all images
-docker rmi <имя-образа> - delete image
-docker rmi -f <имя-образа> - delete image even if containers are running
+docker rmi <image name> - delete image
+docker rmi -f <image name> - delete image even if containers are running
 docker ps - view all running containers
 docker ps -a - view all containers including stopped
 docker rm $(docker ps -aq) - delete all containers
