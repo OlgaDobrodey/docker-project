@@ -4,7 +4,7 @@ Learning DOCKER using the example of a SPRING-BOOT application
 ### General information 
 
 Before all:
-- Change ip address in application.yaml to your own 
+- Change ip address in application.yaml to your computer ip
 - Build project 
 
 
@@ -22,8 +22,8 @@ docker rm -f $(docker ps -aq) - delete all containers even if they’re running
 docker run <image name> - run container
 -d - detached mode
 -p <port>:<port> - mapping ports
-– rm - delete container after stop
-– name <container name> - give name to container
+–rm - delete container after stop
+–name <container name> - give name to container
 -v <project directory>:<container’s directory> - create volume
 docker stop - stop container
 docker-compose build - build images
