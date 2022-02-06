@@ -5,4 +5,3 @@ VALUES ('Tanya', 'Klasevich', 'JAVA', '1500'),
        ('Vladislav', 'Eremenko', 'JAVA', '1000'),
        ('Stanislav', 'Korg', 'JAVA', '2000'),
        ('Sergey', 'Petrov', 'FD', '900');
-

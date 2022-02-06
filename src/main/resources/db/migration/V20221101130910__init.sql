@@ -9,27 +9,3 @@ CREATE TABLE IF NOT EXISTS employees
     salary                   INTEGER               NOT NULL,
     PRIMARY KEY (id)
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
