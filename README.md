@@ -4,7 +4,6 @@ Learning DOCKER using the example of a SPRING-BOOT application
 ### General information 
 
 Before all:
-- Change ip address in application.yaml to your computer ip
 - Build project 
 
 
